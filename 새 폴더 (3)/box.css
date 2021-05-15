@@ -1,0 +1,48 @@
+.box_front {
+    width: 500px;
+    height: 500px;
+    background: #fabea7;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    margin-top: 500px;
+    margin-left: 500px;
+}
+
+.box_front:hover {
+    background: #fbe2e5;
+}
+
+.box_front:active {
+    font-size: 25px;
+}
+
+.box_front::before {
+    content: "BEFORE";
+    width: 500px;
+    height: 150px;
+    background: #9caea4;
+    position: absolute;
+    top: -30%;
+    left: 18%;
+    transform: skewX(-50deg);
+}
+
+.box_front:hover::before {
+    background: #767c78;
+}
+
+.box_front::after {
+    content: "AFTER";
+    width: 180px;
+    height: 500px;
+    background: #776d8a;
+    position: absolute;
+    top: -15%;
+    right: -36%;
+    transform: skewY(-40deg);
+}
+
+.box_front:hover::after {
+    background: #dce3e5;
+}

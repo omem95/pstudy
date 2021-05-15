@@ -1,0 +1,7 @@
+ul {
+    font-size: 25px;
+}
+
+ul > li:nth-child(2n) {
+    color: blue;
+}
